@@ -31,6 +31,7 @@ ul {
   background: #f1f5f4;
   padding: 40px;
   margin: 0;
+
 }
 
 .main_content {
@@ -285,8 +286,9 @@ ul {
 .theNet
 {
   opacity: 1;
-  top:-100px;
+  top:-140px;
   z-index: 0;
+  left:-50px;
 }
 
 .adress {
