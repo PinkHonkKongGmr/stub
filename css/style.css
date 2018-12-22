@@ -129,7 +129,6 @@ ul {
 
 .points {
   width: 233px;
-  height: 42px;
   color: #383838;
   /* font-family: "TT Norms - Bold"; */
   font-family: 'Source Sans Pro', sans-serif;
@@ -144,7 +143,7 @@ ul {
 .minus {
   position: absolute;
   right: -130px;
-  bottom: 13px;
+  top: -4px;
   width: 36px;
   height: 36px;
   text-align: center;
@@ -153,6 +152,7 @@ ul {
 .plus {
   position: absolute;
   right: -113px;
+  top:3px;
 }
 
 .discription li ul li a {
@@ -163,7 +163,7 @@ ul {
 }
 
 .toShow {
-  margin-bottom: 50px;
+  margin-bottom: 16px;
 }
 
 .discription h2 {
@@ -314,6 +314,9 @@ ul {
   }
 .main_content div
 {margin: auto;}
+
+.discription
+{padding-left: 100px;}
 
   .polis-order
   {margin: auto;}
