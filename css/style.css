@@ -19,8 +19,9 @@ ul {
   list-style: none;
 }
 
-.hide {
-  display: none;
+.hide
+{
+  display:none;
 }
 
 .stub_wrapper {
@@ -308,15 +309,12 @@ ul {
 @media screen and (max-width: 1200px) {
   .main_content {
     flex-direction: column;
+    padding: 20px;
 
   }
 .main_content div
 {margin: auto;}
 
-  ul {
-    display: flex;
-    flex-direction: column;
-  }
   .polis-order
   {margin: auto;}
 
