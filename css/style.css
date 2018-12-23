@@ -435,6 +435,8 @@ ul {
 @media screen and (max-width: 480px) {
 
 
+
+
   .stub_wrapper
   {width: auto;box-sizing: border-box;padding: 13px;}
 
@@ -469,7 +471,10 @@ ul {
 
   right: 17px;
 }
-
+.points
+{
+  width: 85%;
+}
 .polis-order
 {margin: auto;padding: 90px 20px;padding-bottom: 30px;}
 
@@ -604,6 +609,17 @@ input
     left:-700px;
     max-width: 100%;
 
+  }
+
+  .minus {
+
+    right: -30px;
+
+  }
+
+  .plus {
+
+    right: -13px;
   }
 
 }
