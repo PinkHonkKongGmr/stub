@@ -19,11 +19,10 @@ ul {
   list-style: none;
 }
 
-.hide
+.hide, .mob
 {
   display:none;
 }
-
 
 
 .stub_wrapper {
@@ -70,9 +69,9 @@ ul {
   /* font-family: "TT Norms Medium";не нашёл этот шрифт в бесплатном доступе */
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 37px;
-  width: 406px;
+  width: 306px;
 }
 
 .polis-order form {
@@ -97,10 +96,11 @@ ul {
   border: none;
   opacity: 0.5;
   color: #000000;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 16px;
   width: 150px;
+  padding-left: 12px;
 }
 
 .polis-order form button {
@@ -315,7 +315,7 @@ ul {
   font-size: 11px;
   line-height: 14px;
   bottom: 3px;
-  right: 140px;
+  right: 40px;
   display: flex;
 }
 
@@ -331,33 +331,218 @@ ul {
 .discription
 {padding-left: 100px;}
 
+.minus {
+
+  right: 0px;
+
+}
+
+.plus {
+
+  right: 17px;
+}
+
+
   .polis-order
-  {margin: auto;}
+  {margin: auto;padding-top: 70px;}
 
   .polis-order form
   {
     width:100%;
+  }
 
+  .polis-order h2
+  {
+    margin-top: 22px;
+    width: auto;
   }
 
   .polis-order p
   {
     margin-bottom: 40px;
   }
+
+  .icons
+  {
+    padding-bottom: 40px;
+
+  }
 }
 
 @media screen and (max-width: 768px) {
+
+  .polis-order
+  {margin: auto;padding: 70px 100px;}
+
 .points
-{font-size: 28px;}
+{font-size: 28px;width: 95%;}
 
 .minus {
   position: absolute;
-  right: -60px;
+  right: 60px;
 
 }
 
 .plus {
   position: absolute;
-  right: -43px;
+  right: 77px;
 }
+
+.theNet
+{
+  top:-220px;
+  left:-200px;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .stub_wrapper
+  {width: auto;box-sizing: border-box;padding: 13px;}
+
+
+  .prosto_polis
+  {height: 90px;}
+
+
+  .theNet
+  {
+    top:-350px;
+    left:-600px;
+    max-width: 100%;
+
+  }
+
+  .main_content
+  {
+    padding: 0;
+  }
+
+.discription
+{padding-left: 20px;}
+
+.minus {
+
+  right: 0px;
+
+}
+
+.plus {
+
+  right: 17px;
+}
+
+.polis-order
+{margin: auto;padding: 90px 20px;padding-bottom: 30px;}
+
+.discription .icons
+{
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin-left: 0px;
+  text-align: left;
+}
+.polis-order form
+{
+  display: block;
+  height: auto;
+}
+
+.polis-order form button, .polis-order form input
+{
+  width: 100%;
+}
+
+.polis-order form button
+{border-top-left-radius: 0;
+border-top-right-radius: 0;}
+.discription h2
+{width: auto;}
+
+.discription .icons div
+{margin-bottom: 20px;}
+
+.items
+{
+  padding-right: 12px;
+}
+
+.prosto_polis img
+{
+  max-width: 76%;
+}
+.mobmenu_wrapper
+{
+  z-index: -5;
+
+}
+.mobmenu
+{
+  position: static;
+  color: #262626;
+font-size: 20px;
+font-weight: 500;
+line-height: 25px;
+text-transform: uppercase;
+letter-spacing: 1.06px;
+margin-bottom: 34px;
+opacity: 1;
+z-index: -5;
+
+}
+
+.mobmenu_wrapper
+{
+padding-left: 35px;
+background: white;
+position: fixed;
+width: 100%;
+top:0;
+left: 0;
+z-index: 500;
+}
+
+
+
+.unmob
+{
+  display: none;
+}
+.mob
+{display: block;
+}
+
+
+.pv
+{
+  left:34px;
+  top:-11px;
+  z-index: 20;
+}
+
+.pl
+{
+top:-10px;
+}
+
+input
+{
+  height: 51px;
+  padding-left: 20px;
+}
+
+.dev
+{
+  left:27%;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.discription .icons .third
+{
+  margin-bottom: 50px;
+}
+
+
 }
