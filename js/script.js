@@ -1,23 +1,15 @@
 var pusher = document.querySelectorAll('.minus');
-
 var pluses = document.querySelectorAll('.plus');
-
 var toShow = document.querySelectorAll('.toShow');
-
 var ul = document.querySelectorAll('.points');
-
 var send = document.querySelector('button');
-
 var complete = document.querySelector('.complete');
-
 var complete_img = document.querySelector('.complete_img');
-
 var input = document.querySelector('input');
+var done = [complete, complete_img];
 
-var done = [complete,complete_img];
 
 for (let count = 0; count < pusher.length; count++) {
-
 
   let thatToshow;
   let thatPlus;
@@ -37,20 +29,19 @@ for (let count = 0; count < pusher.length; count++) {
 }
 
 
-send.onclick = function () {
+send.onclick = function() {
 
-if (input.value!='') {
-  for (let dn of done) {
-    dn.style.display='block';
-    input.style.background='inherit';
-  }
-  setTimeout(function () {
+  if (input.value != '') {
     for (let dn of done) {
-      dn.style.display='none';
+      dn.style.display = 'block';
+      input.style.background = 'inherit';
     }
-  },3100)
-}
-else {
-  input.style.background='red';
-}
+    setTimeout(function() {
+      for (let dn of done) {
+        dn.style.display = 'none';
+      }
+    }, 3100)
+  } else {
+    input.style.background = 'red';
+  }
 }

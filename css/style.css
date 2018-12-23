@@ -7,7 +7,6 @@ body {
 * {
   padding: 0;
   margin: 0;
-
 }
 
 a {
@@ -19,18 +18,15 @@ ul {
   list-style: none;
 }
 
-.hide, .mob
-{
-  display:none;
+.hide, .mob {
+  display: none;
 }
-
 
 .stub_wrapper {
   position: relative;
   background: #f1f5f4;
   padding: 40px;
   margin: 0;
-
 }
 
 .main_content {
@@ -157,7 +153,7 @@ ul {
 .plus {
   position: absolute;
   right: -113px;
-  top:3px;
+  top: 3px;
 }
 
 .discription li ul li a {
@@ -283,12 +279,11 @@ ul {
   letter-spacing: 0.88px;
 }
 
-.theNet
-{
+.theNet {
   opacity: 1;
-  top:-140px;
+  top: -140px;
   z-index: 0;
-  left:-50px;
+  left: -50px;
 }
 
 .adress {
@@ -319,321 +314,263 @@ ul {
   display: flex;
 }
 
-.dev span
-{
+.dev span {
   padding-top: 2px;
+}
+
+@media screen and (min-width: 1350px) {
+
+  .discription ul
+  {
+    max-width: 381px;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
   .main_content {
     flex-direction: column;
     padding: 20px;
-
   }
-.main_content div
-{margin: auto;}
-
-.discription
-{padding-left: 100px;}
-
-.minus {
-
-  right: 0px;
-
-}
-
-.plus {
-
-  right: 17px;
-}
-
-
-  .polis-order
-  {margin: auto;padding-top: 70px;}
-
-  .polis-order form
-  {
-    width:100%;
+  .main_content div {
+    margin: auto;
   }
-
-  .polis-order h2
-  {
+  .discription {
+    padding-left: 100px;
+  }
+  .minus {
+    right: 0px;
+  }
+  .plus {
+    right: 17px;
+  }
+  .polis-order {
+    margin: auto;
+    padding-top: 70px;
+  }
+  .polis-order form {
+    width: 100%;
+  }
+  .polis-order h2 {
     margin-top: 22px;
     width: auto;
   }
-
-  .polis-order p
-  {
+  .polis-order p {
     margin-bottom: 40px;
   }
-
-  .icons
-  {
+  .icons {
     padding-bottom: 40px;
-
   }
 }
 
-.complete
-{
+.complete {
   position: absolute;
   width: 110%;
   height: 131%;
-  top:-15px;
-  left:-5px;
+  top: -15px;
+  left: -5px;
   z-index: 5;
   border-radius: 5px;
   border: 1px solid rgba(120, 160, 152, 0.3);
   background-color: #ffffff;
-  padding-top:13px;
+  padding-top: 13px;
   padding-left: 46px;
   box-sizing: border-box;
   display: none;
 }
 
-.complete_img
-{position: absolute;z-index: 9;top:2px;display: none;}
+.complete_img {
+  position: absolute;
+  z-index: 9;
+  top: 2px;
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
-
-  .polis-order
-  {margin: auto;padding: 70px 100px;}
-
-.points
-{font-size: 28px;width: 95%;}
-
-.minus {
-  position: absolute;
-  right: 60px;
-
-}
-
-.plus {
-  position: absolute;
-  right: 77px;
-}
-
-.theNet
-{
-  top:-220px;
-  left:-200px;
-}
-
-.complete
-{
-
-  width: 110%;
-  height: 135%;
-  top:-15px;
-  left:-5px;
-  padding-top:-2px;
-}
-.complete h2
-{margin-top: 2px;}
+  .polis-order {
+    margin: auto;
+    padding: 70px 100px;
+  }
+  .points {
+    font-size: 28px;
+    width: 95%;
+  }
+  .minus {
+    position: absolute;
+    right: 60px;
+  }
+  .plus {
+    position: absolute;
+    right: 77px;
+  }
+  .theNet {
+    top: -220px;
+    left: -200px;
+  }
+  .complete {
+    width: 110%;
+    height: 135%;
+    top: -15px;
+    left: -5px;
+    padding-top: -2px;
+  }
+  .complete h2 {
+    margin-top: 2px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-
-
-
-
-  .stub_wrapper
-  {width: auto;box-sizing: border-box;padding: 13px;}
-
-
-  .prosto_polis
-  {height: 90px;}
-
-
-  .theNet
-  {
-    top:-350px;
-    left:-600px;
-    max-width: 100%;
-
+  .stub_wrapper {
+    width: auto;
+    box-sizing: border-box;
+    padding: 13px;
   }
-
-  .main_content
-  {
+  .prosto_polis {
+    height: 90px;
+  }
+  .theNet {
+    top: -350px;
+    left: -600px;
+    max-width: 100%;
+  }
+  .main_content {
     padding: 0;
   }
-
-.discription
-{padding-left: 20px;}
-
-.minus {
-
-  right: 0px;
-
-}
-
-.plus {
-
-  right: 17px;
-}
-.points
-{
-  width: 85%;
-}
-.polis-order
-{margin: auto;padding: 90px 20px;padding-bottom: 30px;}
-
-.advantages li
-{
-  max-width: 305px;
-}
-
-.discription .icons
-{
-  flex-wrap: wrap;
-  max-width: 300px;
-  margin-left: 0px;
-  text-align: left;
-}
-.polis-order form
-{
-  display: block;
-  height: auto;
-}
-
-.polis-order form button, .polis-order form input
-{
-  width: 100%;
-}
-
-.polis-order form button
-{border-top-left-radius: 0;
-border-top-right-radius: 0;}
-.discription h2
-{width: auto;}
-
-.discription .icons div
-{margin-bottom: 20px;}
-
-.items
-{
-  padding-right: 12px;
-}
-
-.prosto_polis img
-{
-  max-width: 76%;
-}
-.mobmenu_wrapper
-{
-  z-index: -5;
-
-}
-.mobmenu
-{
-  position: static;
-  color: #262626;
-font-size: 20px;
-font-weight: 500;
-line-height: 25px;
-text-transform: uppercase;
-letter-spacing: 1.06px;
-margin-bottom: 34px;
-opacity: 1;
-z-index: -5;
-}
-.mobmenuBoxNone
-{display: none;}
-.mobmenu_wrapper
-{
-padding-left: 35px;
-position: fixed;
-width: 100%;
-top:0;
-left: 0;
-z-index: 500;
-}
-.white
-{background: white;}
-
-
-.unmob
-{
-  display: none;
-}
-.mob
-{display: block;
-}
-
-
-.pv
-{
-  left:34px;
-  top:-11px;
-  z-index: 20;
-}
-
-.pl
-{
-top:-10px;
-}
-
-input
-{
-  height: 51px;
-  padding-left: 20px;
-}
-
-.dev
-{
-  left:27%;
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-
-.discription .icons .third
-{
-  margin-bottom: 50px;
-}
-
-.complete
-{
-  position: absolute;
-  width: 106%;
-  height: 120%;
-  left: -5px;
-  padding-top: 34px;
-}
-
-.complete_img
-{top:26px;}
-
+  .discription {
+    padding-left: 20px;
+  }
+  .minus {
+    right: 0px;
+  }
+  .plus {
+    right: 17px;
+  }
+  .points {
+    width: 85%;
+  }
+  .polis-order {
+    margin: auto;
+    padding: 90px 20px;
+    padding-bottom: 30px;
+  }
+  .advantages li {
+    max-width: 305px;
+  }
+  .discription .icons {
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin-left: 0px;
+    text-align: left;
+  }
+  .polis-order form {
+    display: block;
+    height: auto;
+  }
+  .polis-order form button, .polis-order form input {
+    width: 100%;
+  }
+  .polis-order form button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .discription h2 {
+    width: auto;
+  }
+  .discription .icons div {
+    margin-bottom: 20px;
+  }
+  .items {
+    padding-right: 12px;
+  }
+  .prosto_polis img {
+    max-width: 76%;
+  }
+  .mobmenu_wrapper {
+    z-index: -5;
+  }
+  .mobmenu {
+    position: static;
+    color: #262626;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.06px;
+    margin-bottom: 34px;
+    opacity: 1;
+    z-index: -5;
+  }
+  .mobmenuBoxNone {
+    display: none;
+  }
+  .mobmenu_wrapper {
+    padding-left: 35px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  }
+  .white {
+    background: white;
+  }
+  .unmob {
+    display: none;
+  }
+  .mob {
+    display: block;
+  }
+  .pv {
+    left: 34px;
+    top: -11px;
+    z-index: 20;
+  }
+  .pl {
+    top: -10px;
+  }
+  input {
+    height: 51px;
+    padding-left: 20px;
+  }
+  .dev {
+    left: 27%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .discription .icons .third {
+    margin-bottom: 50px;
+  }
+  .complete {
+    position: absolute;
+    width: 106%;
+    height: 120%;
+    left: -5px;
+    padding-top: 34px;
+  }
+  .complete_img {
+    top: 26px;
+  }
 }
 
 @media screen and (max-width: 330px) {
-
-  .discription h2
-  {
+  .discription h2 {
     max-width: 250px;
   }
-
-  .advantages li
-  {
+  .advantages li {
     max-width: 200px;
   }
-  .theNet
-  {
-    top:-350px;
-    left:-700px;
+  .theNet {
+    top: -350px;
+    left: -700px;
     max-width: 100%;
-
   }
-
   .minus {
-
     right: -30px;
-
   }
-
   .plus {
-
     right: -13px;
   }
-.rp
-{left:10px;}
+  .rp {
+    left: 10px;
+  }
 }

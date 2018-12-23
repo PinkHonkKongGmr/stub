@@ -12,11 +12,11 @@ var mobmenu_wrapper = document.querySelector('.mobmenu_wrapper');
 
 
 
-  humburger.addEventListener('click',function humburgerToggle() {
+humburger.addEventListener('click', function humburgerToggle() {
 
-    line1.classList.toggle('cross');
-    line2.classList.toggle('hide');
-    line3.classList.toggle('cross2');
-    mobmenuBox.classList.toggle('mobmenuBoxNone');
-    mobmenu_wrapper.classList.toggle('white');
-  });
+  line1.classList.toggle('cross');
+  line2.classList.toggle('hide');
+  line3.classList.toggle('cross2');
+  mobmenuBox.classList.toggle('mobmenuBoxNone');
+  mobmenu_wrapper.classList.toggle('white');
+});
