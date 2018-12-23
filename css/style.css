@@ -369,6 +369,26 @@ ul {
   }
 }
 
+.complete
+{
+  position: absolute;
+  width: 110%;
+  height: 131%;
+  top:-15px;
+  left:-5px;
+  z-index: 5;
+  border-radius: 5px;
+  border: 1px solid rgba(120, 160, 152, 0.3);
+  background-color: #ffffff;
+  padding-top:13px;
+  padding-left: 46px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.complete_img
+{position: absolute;z-index: 9;top:2px;display: none;}
+
 @media screen and (max-width: 768px) {
 
   .polis-order
@@ -394,9 +414,21 @@ ul {
   left:-200px;
 }
 
+.complete
+{
+
+  width: 110%;
+  height: 135%;
+  top:-15px;
+  left:-5px;
+  padding-top:-2px;
+}
+.complete h2
+{margin-top: 2px;}
 }
 
 @media screen and (max-width: 480px) {
+
 
   .stub_wrapper
   {width: auto;box-sizing: border-box;padding: 13px;}
@@ -544,5 +576,29 @@ input
   margin-bottom: 50px;
 }
 
+.complete
+{
+  position: absolute;
+  width: 106%;
+  height: 120%;
+  left: -5px;
+  padding-top: 34px;
+}
+
+.complete_img
+{top:26px;}
+
+}
+
+@media screen and (max-width: 330px) {
+
+
+  .theNet
+  {
+    top:-350px;
+    left:-700px;
+    max-width: 100%;
+
+  }
 
 }

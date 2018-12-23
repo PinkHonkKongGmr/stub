@@ -6,6 +6,14 @@ var toShow = document.querySelectorAll('.toShow');
 
 var ul = document.querySelectorAll('.points');
 
+var send = document.querySelector('button');
+
+var complete = document.querySelector('.complete');
+
+var complete_img = document.querySelector('.complete_img');
+
+var done = [complete,complete_img];
+
 for (let count = 0; count < pusher.length; count++) {
 
 
@@ -24,4 +32,17 @@ for (let count = 0; count < pusher.length; count++) {
     $(thatToshow).slideToggle(0);
     $(thatPlus).slideToggle(0);
   });
+}
+
+
+send.onclick = function () {
+
+for (let dn of done) {
+  dn.style.display='block';
+}
+setTimeout(function () {
+  for (let dn of done) {
+    dn.style.display='none';
+  }
+},3100)
 }
