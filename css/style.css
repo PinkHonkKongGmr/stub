@@ -319,6 +319,11 @@ ul {
   display: flex;
 }
 
+.dev span
+{
+  padding-top: 2px;
+}
+
 @media screen and (max-width: 1200px) {
   .main_content {
     flex-direction: column;
