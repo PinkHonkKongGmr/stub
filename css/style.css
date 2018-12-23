@@ -99,10 +99,10 @@ ul {
   padding-left: 12px;
 }
 
-.phone
-{
+.phone {
   box-sizing: border-box;
 }
+
 .polis-order form button {
   width: 152px;
   height: 45px;
@@ -323,12 +323,9 @@ ul {
 }
 
 @media screen and (min-width: 1350px) {
-
-  .discription ul
-  {
+  .discription ul {
     max-width: 381px;
   }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -538,8 +535,16 @@ ul {
   }
   .dev {
     left: 27%;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 30px;
+    border-top: 2px solid #f1f5f4;;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+  .inside {
+    display: inline-block;
+    margin: auto;
   }
   .discription .icons .third {
     margin-bottom: 50px;
