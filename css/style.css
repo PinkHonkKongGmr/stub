@@ -478,6 +478,11 @@ ul {
 .polis-order
 {margin: auto;padding: 90px 20px;padding-bottom: 30px;}
 
+.advantages li
+{
+  max-width: 305px;
+}
+
 .discription .icons
 {
   flex-wrap: wrap;
@@ -602,7 +607,15 @@ input
 
 @media screen and (max-width: 330px) {
 
+  .discription h2
+  {
+    max-width: 250px;
+  }
 
+  .advantages li
+  {
+    max-width: 200px;
+  }
   .theNet
   {
     top:-350px;
