@@ -99,6 +99,10 @@ ul {
   padding-left: 12px;
 }
 
+.phone
+{
+  box-sizing: border-box;
+}
 .polis-order form button {
   width: 152px;
   height: 45px;
