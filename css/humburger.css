@@ -10,14 +10,12 @@
   flex-direction: column;
   width: 31px;
   height: 31px;
-  position: fixed;
-  z-index: 50;
-  top: 19px;
-  left:20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .line {
-  width: 100%;
+  width: 31px;
   border-top: 3px solid #383838;
   margin-bottom: 25%;
   background: #383838;
@@ -26,13 +24,13 @@
 .cross {
   transform: rotate(45deg);
   position: absolute;
-  top: 14px;
+  top: 28px;
   background: green;
 }
 
 .cross2 {
   transform: rotate(-45deg);
   position: absolute;
-  top: 14px;
+  top: 28px;
 }
 }
