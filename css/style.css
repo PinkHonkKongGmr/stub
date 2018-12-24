@@ -93,9 +93,7 @@ ul {
   padding-left: 12px;
 }
 
-.phone {
-  box-sizing: border-box;
-}
+
 
 .polis-order form button {
   width: 152px;
@@ -382,6 +380,8 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+
+
   .polis-order {
     margin: auto;
     padding: 70px 100px;
@@ -424,6 +424,10 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
+
+  .phone {
+    box-sizing: border-box;
+  }
   .stub_wrapper {
     width: auto;
     box-sizing: border-box;
