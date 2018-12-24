@@ -399,14 +399,17 @@ ul {
     right: 77px;
   }
   .theNet {
-    top: -120px;
-    left: 0;
+    top: -80px;
+    left:0;
     overflow: hidden;
     max-width: 100%;
-height:1000px;
-
+    height:1000px;
   }
 
+  .theNet img
+  {
+    width: 800px;
+  }
 
   .complete {
     width: 110%;
@@ -542,6 +545,11 @@ height:1000px;
   .complete_img {
     top: 26px;
   }
+  .theNet img
+  {
+    width: 700px;
+  }
+
 }
 
 @media screen and (max-width: 330px) {
@@ -551,11 +559,7 @@ height:1000px;
   .advantages li {
     max-width: 200px;
   }
-  .theNet {
-    top: -350px;
-    left: -700px;
-    max-width: 100%;
-  }
+
   .minus {
     right: -30px;
   }
