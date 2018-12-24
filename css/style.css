@@ -494,6 +494,7 @@ ul {
   }
   .prosto_polis img {
     max-width: 76%;
+    top:0;
   }
   .mobmenu_wrapper {
     z-index: -5;
