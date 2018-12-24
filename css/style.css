@@ -320,6 +320,27 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .main_content
+  {justify-content: space-around;padding-left: 0}
+
+
+  .polis-order
+{margin-left: 90px;}
+  .discription
+  {
+    margin-right: 90px;
+  }
+
+  .minus {
+    right: -130px;
+  }
+
+  .plus {
+    right: -113px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .main_content {
     flex-direction: column;
