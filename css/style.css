@@ -479,6 +479,12 @@ ul {
   .discription .icons div {
     margin-bottom: 20px;
   }
+
+.discription .icons
+  {
+
+    margin-left: auto;
+  }
   .items {
     padding-right: 12px;
   }
