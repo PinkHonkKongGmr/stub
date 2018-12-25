@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 body {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 * {
@@ -18,14 +20,30 @@ ul {
   list-style: none;
 }
 
+.bot {
+  width: 100%;
+  bottom: 0;
+  height: 40px;
+  background: #f1f5f4;
+  display: none;
+  position: fixed;
+}
+
+.top {
+  width: 100%;
+  top: 0;
+  height: 40px;
+  background: #f1f5f4;
+  position: fixed;
+  display: none;
+}
+
 .hide, .mob {
   display: none;
 }
 
 .stub_wrapper {
-  position: relative;
   background: #f1f5f4;
-  padding: 40px;
   margin: 0;
 }
 
@@ -34,6 +52,10 @@ ul {
   display: flex;
   padding: 140px 90px;
   padding-right: 0;
+}
+
+.subWrapper {
+  display: flex;
 }
 
 .polis-order {
@@ -48,11 +70,9 @@ ul {
 
 .prosto_polis img {
   position: absolute;
-  left:0;
-  top:-20px;
+  left: 0;
+  top: -20px;
 }
-
-
 
 .polis-order h2 {
   color: #262626;
@@ -67,7 +87,6 @@ ul {
 .polis-order form {
   margin-top: 48px;
   display: flex;
-  position: relative;
   z-index: 5;
   width: 328px;
   height: 51px;
@@ -92,8 +111,6 @@ ul {
   width: 150px;
   padding-left: 12px;
 }
-
-
 
 .polis-order form button {
   width: 152px;
@@ -186,7 +203,7 @@ ul {
 
 .advantages li {
   margin-bottom: 18px;
-  padding-left: 10px;
+  padding-left: 14px;
   position: relative;
 }
 
@@ -213,7 +230,6 @@ ul {
 
 .items i img {
   position: absolute;
-  left: 15px;
 }
 
 .items p {
@@ -273,6 +289,7 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.81px;
   letter-spacing: 0.88px;
+  z-index: 100;
 }
 
 .theNet {
@@ -288,16 +305,16 @@ ul {
   left: 40px;
 }
 
-.number {
-  width: 240px;
-  top: 6px;
-  right: 0;
-}
-
 .mail {
   width: 134px;
   bottom: 10px;
   left: 40px;
+}
+
+.number {
+  width: 240px;
+  top: 6px;
+  right: 0;
 }
 
 .dev {
@@ -314,21 +331,36 @@ ul {
   padding-top: 2px;
 }
 
-@media screen and (min-width: 1350px) {
-  .discription ul {
-    max-width: 381px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .main_content
-  {justify-content: space-around;padding-left: 0}
+
+  .stub_wrapper {
+    height: 100vh;
+    padding: 0 40px!important;
+  }
+
+  .main_content {
+    justify-content: space-around;
+    padding-left: 0;
+  }
 
 
-  .polis-order
-{margin-left: 90px;}
-  .discription
+    .bot, .top {
+      display: block;
+      left: 0;
+    }
+
+  .polis-order {
+    margin-left: 90px;
+    width: 400px;
+    height: 100px;
+  }
+
+  .fixx
   {
+    position: fixed;
+  }
+
+  .discription {
     margin-right: 90px;
   }
 
@@ -339,39 +371,61 @@ ul {
   .plus {
     right: -113px;
   }
+
+  .number {
+
+    right: 10px;
+  }
+
+  .dev {
+
+    right: 50px;
+
+  }
 }
 
 @media screen and (max-width: 1200px) {
+
+
   .main_content {
     flex-direction: column;
     padding: 20px;
   }
+
   .main_content div {
     margin: auto;
   }
+
   .discription {
     padding-left: 100px;
   }
+
   .minus {
     right: 0px;
   }
+
   .plus {
     right: 17px;
   }
+
   .polis-order {
     margin: auto;
     padding-top: 70px;
   }
+
   .polis-order form {
     width: 100%;
   }
+
   .polis-order h2 {
     margin-top: 22px;
     width: auto;
   }
+
   .polis-order p {
     margin-bottom: 40px;
   }
+
   .icons {
     padding-bottom: 40px;
   }
@@ -400,35 +454,60 @@ ul {
   display: none;
 }
 
+@media screen and (min-width: 1350px) {
+  .discription ul {
+    max-width: 381px;
+  }
+
+  .main_content {
+    justify-content: center;
+  }
+
+  .polis-order {
+    margin-right: 220px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .stub_wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    display: block;
+    padding: 40px;
+  }
+}
+
 @media screen and (max-width: 768px) {
-
-
   .polis-order {
     margin: auto;
     padding: 70px 100px;
   }
+
   .points {
     font-size: 28px;
     width: 95%;
   }
+
   .minus {
     position: absolute;
     right: 60px;
   }
+
   .plus {
     position: absolute;
     right: 77px;
   }
+
   .theNet {
     top: -80px;
-    left:0;
+    left: 0;
     overflow: hidden;
     max-width: 100%;
-    height:1000px;
+    height: 1000px;
   }
 
-  .theNet img
-  {
+  .theNet img {
     width: 800px;
   }
 
@@ -439,21 +518,23 @@ ul {
     left: -5px;
     padding-top: -2px;
   }
+
   .complete h2 {
     margin-top: 2px;
   }
 }
 
 @media screen and (max-width: 480px) {
-
   .phone {
     box-sizing: border-box;
   }
+
   .stub_wrapper {
     width: auto;
     box-sizing: border-box;
     padding: 13px;
   }
+
   .prosto_polis {
     height: 90px;
   }
@@ -461,65 +542,79 @@ ul {
   .main_content {
     padding: 0;
   }
+
   .discription {
     padding-left: 20px;
   }
+
   .minus {
     right: 0px;
   }
+
   .plus {
     right: 17px;
   }
+
   .points {
     width: 85%;
   }
+
   .polis-order {
     margin: auto;
     padding: 90px 20px;
     padding-bottom: 30px;
   }
+
   .advantages li {
     max-width: 305px;
   }
+
   .discription .icons {
     flex-wrap: wrap;
     max-width: 300px;
     margin-left: 0px;
     text-align: left;
   }
+
   .polis-order form {
     display: block;
     height: auto;
   }
+
   .polis-order form button, .polis-order form input {
     width: 100%;
   }
+
   .polis-order form button {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
   .discription h2 {
     width: auto;
   }
+
   .discription .icons div {
     margin-bottom: 20px;
   }
 
-.discription .icons
-  {
-
+  .discription .icons {
     margin-left: auto;
   }
+
   .items {
     padding-right: 12px;
   }
+
   .prosto_polis img {
     max-width: 76%;
-    top:0;
+    top: 0;
   }
+
   .mobmenu_wrapper {
     z-index: -5;
   }
+
   .mobmenu {
     position: static;
     color: #262626;
@@ -532,9 +627,11 @@ ul {
     opacity: 1;
     z-index: -5;
   }
+
   .mobmenuBoxNone {
     display: none;
   }
+
   .mobmenu_wrapper {
     padding-left: 35px;
     position: fixed;
@@ -543,6 +640,7 @@ ul {
     left: 0;
     z-index: 500;
   }
+
   .white {
     background: white;
     box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.6);
@@ -553,6 +651,7 @@ ul {
     height: 51px;
     padding-left: 20px;
   }
+
   .dev {
     left: 27%;
     padding-top: 20px;
@@ -562,13 +661,16 @@ ul {
     left: 0;
     text-align: center;
   }
+
   .inside {
     display: inline-block;
     margin: auto;
   }
+
   .discription .icons .third {
     margin-bottom: 50px;
   }
+
   .complete {
     position: absolute;
     width: 106%;
@@ -576,20 +678,21 @@ ul {
     left: -5px;
     padding-top: 34px;
   }
+
   .complete_img {
     top: 26px;
   }
-  .theNet img
-  {
+
+  .theNet img {
     width: 700px;
   }
-
 }
 
 @media screen and (max-width: 330px) {
   .discription h2 {
     max-width: 250px;
   }
+
   .advantages li {
     max-width: 200px;
   }
@@ -597,9 +700,11 @@ ul {
   .minus {
     right: -30px;
   }
+
   .plus {
     right: -13px;
   }
+
   .rp {
     left: 10px;
   }

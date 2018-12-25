@@ -1,4 +1,4 @@
-var pusher = document.querySelectorAll('.minus');
+var pusher = document.querySelectorAll('.points');
 var pluses = document.querySelectorAll('.plus');
 var toShow = document.querySelectorAll('.toShow');
 var ul = document.querySelectorAll('.points');
@@ -7,7 +7,11 @@ var complete = document.querySelector('.complete');
 var complete_img = document.querySelector('.complete_img');
 var input = document.querySelector('input');
 var done = [complete, complete_img];
-
+var stub_wrapper = document.querySelector('.stub_wrapper');
+var discription = document.querySelector('.discription');
+var spyderWidth = $('.spyder').css('width').match(/\d/g).join('');
+console.log(spyderWidth);
+var newSpyderWidth;
 
 for (let count = 0; count < pusher.length; count++) {
 
@@ -44,4 +48,17 @@ send.onclick = function() {
   } else {
     input.style.background = 'red';
   }
+}
+
+stub_wrapper.onscroll = function() {
+
+  newSpyderWidth = spyderWidth * Math.abs(discription.getBoundingClientRect().top / 110);
+  console.log(newSpyderWidth);
+  if (newSpyderWidth < 900) {
+    newSpyderWidth = 888;
+  }
+  if (newSpyderWidth > 1000) {
+    newSpyderWidth = 950;
+  }
+  $('.spyder').css('width', newSpyderWidth + 'px');
 }
