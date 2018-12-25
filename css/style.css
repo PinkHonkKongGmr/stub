@@ -97,6 +97,7 @@ ul {
   /* font-family: "TT Norms Medium"; */
   font-family: 'Source Sans Pro', sans-serif;
   justify-content: space-between;
+  position: relative;
 }
 
 .polis-order form input {
@@ -109,6 +110,7 @@ ul {
   line-height: 16px;
   width: 150px;
   padding-left: 12px;
+  position: relative;
 }
 
 .polis-order form button {
