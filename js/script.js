@@ -27,7 +27,7 @@ for (let count = 0; count < pusher.length; count++) {
 
   $(thatPusher).click(function() {
     $(thatUl).toggleClass('active');
-    $(thatToshow).slideToggle(0);
+    $(thatToshow).slideToggle(300);
     $(thatPlus).slideToggle(0);
   });
 }
