@@ -349,7 +349,7 @@ ul {
     width: 50%;
     height: 400px;
     margin: 0;
-    padding-left: 15%;
+    padding: 10px 15%;
   }
   .discription {
     width: 50%;
@@ -377,26 +377,34 @@ ul {
 }
 
 @media screen and (min-width: 1350px) {
+
+  .main_content
+  {
+    padding: 210px 90px;
+  }
   .polis-order {
-    padding-left: 14%;
+    padding-left: 11%;
   }
   .discription {
-    margin-right: 14%;
+    margin-right: 11%;
   }
 }
 
 @media screen and (min-width: 1500px) {
   .polis-order {
-    padding-left: 18%;
+    padding-left: 15%;
   }
   .discription {
-    margin-right: 18%;
+    margin-right: 15%;
   }
 }
 
 @media screen and (min-width: 1800px) {
   .polis-order {
-    padding-left: 20а%;
+    padding-left: 20%;
+  }
+  .discription {
+    margin-right: 20%;
   }
 }
 
