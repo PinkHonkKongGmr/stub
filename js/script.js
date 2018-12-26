@@ -11,6 +11,7 @@ var stub_wrapper = document.querySelector('.stub_wrapper');
 var discription = document.querySelector('.discription');
 var spyderWidth = $('.spyder').css('width').match(/\d/g).join('');
 console.log(spyderWidth);
+console.log(spyderWidth);
 var newSpyderWidth;
 
 for (let count = 0; count < pusher.length; count++) {
@@ -52,13 +53,13 @@ send.onclick = function() {
 
 stub_wrapper.onscroll = function() {
 
-  newSpyderWidth = spyderWidth * Math.abs(discription.getBoundingClientRect().top / 110);
+  newSpyderWidth = spyderWidth * Math.abs(discription.getBoundingClientRect().top / 145);
   console.log(newSpyderWidth);
-  if (newSpyderWidth < 900) {
-    newSpyderWidth = 888;
+  if (newSpyderWidth < 957) {
+    newSpyderWidth = 957;
   }
-  if (newSpyderWidth > 1000) {
-    newSpyderWidth = 950;
+  if (newSpyderWidth > 964) {
+    newSpyderWidth = 964;
   }
   $('.spyder').css('width', newSpyderWidth + 'px');
 }

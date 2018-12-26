@@ -18,7 +18,15 @@ a {
 ul {
   list-style: none;
 }
+.parallax
+{
 
+}
+
+.parl
+{
+
+}
 .bot {
   width: 100%;
   bottom: 0;
@@ -599,7 +607,10 @@ ul {
   .polis-order form {
     display: block;
     height: auto;
+    padding: 0;
   }
+
+
   .polis-order form button, .polis-order form input {
     width: 100%;
   }
