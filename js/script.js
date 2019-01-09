@@ -1,3 +1,5 @@
+'use strict';
+
 var pusher = document.querySelectorAll('.points');
 var pluses = document.querySelectorAll('.plus');
 var toShow = document.querySelectorAll('.toShow');
@@ -14,12 +16,12 @@ console.log(spyderWidth);
 console.log(spyderWidth);
 var newSpyderWidth;
 
-for (let count = 0; count < pusher.length; count++) {
+var _loop = function _loop(count) {
 
-  let thatToshow;
-  let thatPlus;
-  let thatUl;
-  let thatPusher;
+  var thatToshow = void 0;
+  var thatPlus = void 0;
+  var thatUl = void 0;
+  var thatPusher = void 0;
 
   thatPusher = pusher[count];
   thatToshow = toShow[count];
@@ -31,25 +33,71 @@ for (let count = 0; count < pusher.length; count++) {
     $(thatToshow).slideToggle(300);
     $(thatPlus).slideToggle(0);
   });
-}
+};
 
+for (var count = 0; count < pusher.length; count++) {
+  _loop(count);
+}
 
 send.onclick = function() {
 
   if (input.value != '') {
-    for (let dn of done) {
-      dn.style.display = 'block';
-      input.style.background = 'inherit';
-    }
-    setTimeout(function() {
-      for (let dn of done) {
-        dn.style.display = 'none';
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = done[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var dn = _step.value;
+
+        dn.style.display = 'block';
+        input.style.background = 'inherit';
       }
-    }, 3100)
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+
+    setTimeout(function() {
+      var _iteratorNormalCompletion2 = true;
+      var _didIteratorError2 = false;
+      var _iteratorError2 = undefined;
+
+      try {
+        for (var _iterator2 = done[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+          var dn = _step2.value;
+
+          dn.style.display = 'none';
+        }
+      } catch (err) {
+        _didIteratorError2 = true;
+        _iteratorError2 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion2 && _iterator2.return) {
+            _iterator2.return();
+          }
+        } finally {
+          if (_didIteratorError2) {
+            throw _iteratorError2;
+          }
+        }
+      }
+    }, 3100);
   } else {
     input.style.background = 'red';
   }
-}
+};
 
 stub_wrapper.onscroll = function() {
 
@@ -62,4 +110,4 @@ stub_wrapper.onscroll = function() {
     newSpyderWidth = 964;
   }
   $('.spyder').css('width', newSpyderWidth + 'px');
-}
+};
